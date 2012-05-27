@@ -29,12 +29,11 @@ void setup()
 
 void draw() 
 {
-  totalX = map(stick.getX(), -1, 1, 0, 1);
-  totalY = map(-stick.getY(), -1, 1, 0, 1);
-
-
+  totalX = map(stick.getX(), -1, 1, 0, 180);
+  totalY = map(-stick.getY(), -1, 1, 80, 100);
+  
   if (client!=null) {
-    client.write("JOYSTICK:x=" + totalX + ":y=" + totalY  + "\n");
+    client.write("STICK:x=" + totalX + ":y=" + totalY  + "\n");
     // Receive data from server
     if (client.available() > 0) {
       input = client.readString();

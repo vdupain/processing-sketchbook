@@ -43,7 +43,7 @@ import jp.nyatla.nyar4psg.*; // La librairie NyARToolkit Processing library = AR
 
 //----- chemin absolu fichier de paramètres de distorsion de la camera ----
 //String camParaPath = "/home/hinault/Téléchargements/librairies_processing/nyar4psg-1.1.6/data/camera_para.dat";
-String camParaPath = "/Users/vince/Dev/Arduino/processing-sketchbook/libraries/NyAR4psg/data/camera_para.dat";
+String camParaPath = "/Users/vince/Dev/Arduino/NyAR4psg/data/camera_para.dat";
 
 //----- chemin absolu fichiers de description des "patterns" ou "markers" ----
 String patternPath = "/Users/vince/Dev/patternMaker/examples/ARToolKit_Patterns";
