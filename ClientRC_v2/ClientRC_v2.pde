@@ -27,7 +27,7 @@ void setup(){
   fill(0);
   rectMode(CENTER);
     // Connect to the server's IP address and port
-  client = new Client(this, "192.168.1.150", 12345); // Replace with your server's IP and port
+  client = new Client(this, "localhost", 12345); // Replace with your server's IP and port
 }
 
 float totalX = width/2;
@@ -49,8 +49,8 @@ void draw(){
   println(totalX + "-" + totalY);
   rect(totalX,totalY,20,20);
   
-  x = map(totalX, 0, 180, 0, 1);
-  y = map(totalY, 0, 180, 0, 1);
+  x = map(totalX, 0, 180, 0, 180);
+  y = map(totalY, 0, 180, 0, 180);
   if (client!=null) {
     client.write("STICK:x=" + x + ":y=" + y  + "\n");
     // Receive data from server
