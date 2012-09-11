@@ -27,7 +27,7 @@ void setup(){
   fill(0);
   rectMode(CENTER);
     // Connect to the server's IP address and port
-  client = new Client(this, "localhost", 12345); // Replace with your server's IP and port
+  client = new Client(this, "192.168.1.150", 12345); // Replace with your server's IP and port
 }
 
 float totalX = width/2;
